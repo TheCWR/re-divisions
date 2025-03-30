@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">              <!-- Ensure proper scaling for mobile devices -->
+    <title>R.E.D.</title>                                                               <!-- Title will appear in the browser tab -->
+    <link rel="stylesheet" href="style.css">                                            <!-- Link to CSS file -->
+    <script src="script.js" defer></script>                                             <!-- Link to JavaScript file -->
+    <link rel="icon" href="favicon128.ico" type="image/x-icon">                         <!-- con on tab -->
+    <link rel="stylesheet" href="https://use.typekit.net/rqe5rjp.css">                  <!-- Link for adobe web fonts-->
+</head>
+<body onload="greetUser()">                                                             <!-- Calls greetUser() when the page loads -->
+    <header>                                                                            <!-- Section containing the logo, title, and navigation -->
+        <img src="pictures/R.E.D Logo Transparent.png" alt="Robinson Electronics Divisions Logo" id="logo"> <!-- The logo image for the website -->
+        <h1>Robinson Electronics Divisions</h1>                                         <!-- Title heading for the site -->
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>     <!-- Button for toggling dark mode, calls toggleDarkMode() on click -->
+        <nav>                                                                           <!-- Navigation bar for the website -->
+            <ul>                                                                        <!-- Unordered list of navigation links -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#game">Numbers Game</a></li>
+                <li><a href="#shopping-cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p id="greeting"></p>                                                       <!-- Placeholder for displaying a greeting message based on the time of day -->
+        </nav>
+    </header>
+    
+    <section id="about"> <!-- "id" uses a "#" in CSS -->
+        <h2>About <img src="pictures/R.E.D Logo Transparent.png" alt="Robinson Electronics Divisions Logo" class="inline-logo"></h2>
+        <h3>R.E.D. strives to offer useful, unique, appealing, and musical audio products.</h3>
+        <img src="pictures/Calvin_light_mode.png" alt="Calvin Wayne Robinson" id="calvin-image"> <!--for light mode -->
+        <img src="pictures/R.E.D. Circle Logo Outer Transparency.png" alt="R.E.D. Logo Badge" id="REDCircle">
+    <article>
+        <p class="indent">Growing up I quickly became fascinated with many forms of art and technology. 
+           I somehow knew at an early age, maybe about 7 or 8, that I was going to be some kind of scientist.
+           At that time as any boy of that age, I had an interest in the cosmos, dinosaurs, and played with chemicals and microscopes.
+           I also picked up an interest in drawing and sketching quite early on but didn't know that I would very soon
+           (in a short number of years, at about 14) would develop a love of guitar and music.
+           As those young years do, they flew on by despite my belief to the contrary at that time.
+           I soon made it through highschool and made the quick decision to chase audio engineering in college.
+           From there I gained an interest, rightly so, in the very technology used in music production and recording for many years. 
+           This sparked the desire in me to have my own business one day making and repairing audio equipment.
+           Without any further suspense, here we are!
+           You and I together on the gateway to your future in new pallettes of musical audio and of course... 
+           the result of many years of growing aspirations on my part.
+        </p>
+    </article>
+    </section> 
+
+    <section id="aboutgreet"> <!-- "id" uses a "#" in CSS -->  
+        <p><b>My name is Calvin Wayne Robinson,<br>
+         and I welcome you to Robinson Electronics Divisions</b></p>      
+    </section>
+
+    <section id="products"> <!-- "id" uses a "#" in CSS -->
+        <h2>Products and Services</h2>
+        <p>R.E.D. currently offers several amplifier modding options, mostly on older tube amplifiers.<br>
+           Some effects pedal modifications may be done as well depending on the scope of work and desired functionality.<br>
+           <br>
+           <b>Below is the most recent product from Robinson Electronics Divisions.</b><br>
+           <br>
+        </p>
+    
+        <!-- Ascension Boost Pedal Section -->
+        <h3>"Ascension"</h3>
+        <P>One of a kind boost pedal intended to drive the front end of your amplifier
+           providing more versatility in gain structures for rhythm, soloing, or just adding a bolder touch to your playing.
+           A single and simple <b>"Boost"</b> control provides a large range of adjustment
+           while the <b>"Focus"</b> control can allow for a reasonably transparent tone when off (down),
+           or deliver a touch more gain when on (up) along with a tighter, more defined low end and a moderate bell boosted at 4KHz
+           The boost pedal has always been a staple of many player's boards around the world.
+           It is a simple but effective tool to help get the most out of your setup or even add a little magic that wasn't there before!<br>
+           What are you waiting for! Get yours today!<br>  
+        </P>
+        <div class="image-scroll"> <!-- "class" uses a "." in CSS -->
+            <img src="pictures/Ascension/Product/Front.jpeg" alt="Ascension Front - Image 1" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/In.jpeg" alt="Ascension In - Image 2" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/Out.jpeg" alt="Ascension Out - Image 3" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/Right.jpeg" alt="Ascension Right - Image 4" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/Back Slant.jpeg" alt="Ascension Back Slant - Image 5" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/Direct ON.jpeg" alt="Ascension Direct ON - Image 6" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/Front ON.jpeg" alt="Ascension Front ON - Image 7" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/Left ON.jpeg" alt="Ascension Left ON - Image 8" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/Slant ON.jpeg" alt="Ascension Slant ON - Image 9" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Product/Tilt ON.jpeg" alt="Ascension Tilt ON - Image 10" onclick="openModal(this.src)">
+            <img src="pictures/Ascension/Ascension AD.JPG" alt="Ascension Ad - Image 11" onclick="openModal(this.src)">
+        </div>
+        <p><em>Feel free to <b>scroll</b> left or right, and <b>click</b> on the images for a better look.</em></p>
+    </section>   
+
+    <section id="game">
+        <h2>Number Guessing Game</h2>
+        <p>Guess a number between 1 and 10:</p>
+        
+        <!-- Input for the user's guess -->
+        <input type="number" id="userGuess" min="1" max="10" placeholder="Enter a number">
+        
+        <!-- Button to submit the guess -->
+        <button onclick="playGame()">Submit Guess</button>
+        
+        <!-- Area to display the result -->
+        <p id="gameResult"></p>
+    </section>
+
+    <section id="shopping-cart"></section>
+        <h2>Quick Order</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="products/Ascension.JPG" alt="Product 1" class="product-image">
+                <p class="product-name">Ascension</p>
+                <p class="product-price">$99.00</p>
+                <button onclick="addToCart('Ascension', 99)">Add to Cart</button>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="products/R.E.D. Services.png" alt="Product 2" class="product-image">
+                <p class="product-name">Amp Maintenance</p>
+                <p class="product-price">Base Price: $20.00</p>
+                <button onclick="addToCart('Amp Maintenance', 20)">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="products/Split_Phase.JPG" alt="Product 3" class="product-image">
+                <p class="product-name">Gibson Style Split/Phase Board</p>
+                <p class="product-price">$15.00</p>
+                <button onclick="addToCart('Gibson Style Split/Phase Board', 15)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Total Area -->
+        <div id="total-area">
+            <h3>Your Cart</h3>
+            <div id="cart-items">
+                <!-- List of items added to the cart will appear here -->
+            </div>
+            <p>Subtotal: $<span id="subtotal">0.00</span></p>
+            <p>Tax (8.5%): $<span id="tax">0.00</span></p>
+            <p>Shipping: $<span id="shipping">5.00</span></p>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button onclick="checkout()">Check Out</button>
+        </div>
+
+        <!-- Checkout Message -->
+        <p id="checkout-message"></p>
+
+    </section>
+
+    <!-- <section id="contact">
+        <h2>Contact</h2>
+        <p>For inquiries, please email:<br> 
+           cwr@re-divisions.com</p>
+    </section> -->
+
+    <section id="contact">
+        <h2>Contact <img src="pictures/R.E.D Logo Transparent.png" alt="Robinson Electronics Divisions Logo" class="inline-logo"></h2>
+        <form id="contactForm" onsubmit="return validateForm(event)">
+            <!-- Full Name -->
+            <label for="firstName">First Name *</label> <!-- "*" indicates "required field" -->
+            <input type="text" id="firstName" name="firstName">
+            <span id="firstNameError" class="error"></span>
+            
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName">
+            <span id="lastNameError" class="error"></span>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+            <span id="phoneError" class="error"></span>
+
+            <!-- Email Address -->
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error"></span>
+
+            <!-- Comments -->
+            <label for="comments">Comments *</label>
+            <textarea id="comments" name="comments" rows="5"></textarea>
+            <span id="commentsError" class="error"></span>
+
+            <!-- Preferred Contact Method -->
+            <label>Preferred Contact Method *</label>
+            <div>
+                <input type="radio" id="contactByPhone" name="preferredContact" value="phone">
+                <label for="contactByPhone">Phone</label>
+                <input type="radio" id="contactByEmail" name="preferredContact" value="email">
+                <label for="contactByEmail">Email</label>
+            </div>
+            <span id="contactMethodError" class="error"></span>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="success-message"></div>
+    </section>
+
+    <footer>
+        <p>&copy; Robinson Electronics Divisions LLC 2024</p>
+    </footer>
+
+    <!-- Modal for Image View -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Modal Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
